@@ -40,25 +40,25 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
     if 0 < umm <= 10:
-        bar = "🅢—————————"
+        bar = "Ⓘ︎—————————"
     elif 10 < umm < 20:
-        bar = "—🅞————————"
+        bar = "—S⃠————————"
     elif 20 <= umm < 30:
-        bar = "——🅝———————"
+        bar = "——🅣︎———————"
     elif 30 <= umm < 40:
         bar = "———🅐——————"
     elif 40 <= umm < 50:
         bar = "————♡—————"
     elif 50 <= umm < 60:
-        bar = "—————🅡————"
+        bar = "—————𝙺————"
     elif 60 <= umm < 70:
-        bar = "——————🅐———"
+        bar = "——————🅷︎———"
     elif 70 <= umm < 80:
-        bar = "———————🅙——"
+        bar = "———————A——"
     elif 80 <= umm < 95:
-        bar = "————————🅐—"
+        bar = "————————Ⓡ︎—"
     else:
-        bar = "——————————♡"
+        bar = "Ⓘ︎Ⓢ︎Ⓣ︎Ⓚ︎Ⓗ︎Ⓐ︎Ⓡ︎♡"
 
     buttons = [
         [
@@ -76,10 +76,10 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
       [
             InlineKeyboardButton(
-                text="✰ 𝖡ᴧ፝֠֩ʙꭎ ✰", url="https://t.me/WORLD_ALPHA",
+                text="✰ 𝖡ᴧ፝֠֩ʙꭎ ✰", url="https://t.me/CRAZY_OP_01",
             ),
             InlineKeyboardButton(
-                text="✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰", url="https://t.me/+Q25anL0Ckuk5NzM1",
+                text="✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰", url="https://t.me/ll_ISTKHAR_ll",
             )
         ],
          [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -99,10 +99,10 @@ def stream_markup(_, videoid, chat_id):
          ],
         [
             InlineKeyboardButton(
-                text="✰ 𝖡ᴧ፝֠֩ʙꭎ ✰", url="https://t.me/WORLD_ALPHA",
+                text="✰ 𝖡ᴧ፝֠֩ʙꭎ ✰", url="https://t.me/CRAZY_OP_01",
             ),
             InlineKeyboardButton(
-                text="✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰", url="https://t.me/+Q25anL0Ckuk5NzM1",
+                text="✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰", url="https://t.me/ll_ISTKHAR_ll",
             )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
