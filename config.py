@@ -15,7 +15,7 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 # -------------------------------------------------------
 OWNER_USERNAME = getenv("OWNER_USERNAME","ll_ISTKHAR_ll")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME","SONALI_ROBOT")
+BOT_USERNAME = getenv("BOT_USERNAME","purvi_music_bot")
 # --------------------------------------------------------
 BOT_NAME = getenv("BOT_NAME")
 # ---------------------------------------------------------
@@ -48,7 +48,7 @@ GIT_TOKEN = getenv(
 )  # Fill this variable if your upstream repository is private
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/PURVI_SUPPORT")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/CRAZY_OP_01")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+D_gPPokGlNVkNjU1")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
