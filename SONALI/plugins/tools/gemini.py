@@ -1,5 +1,5 @@
 import requests
-from MukeshAPI import api
+from SONALI import api
 from pyrogram import filters
 from pyrogram.enums import ChatAction
 from SONALI import app
