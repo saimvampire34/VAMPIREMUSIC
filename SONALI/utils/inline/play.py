@@ -11,7 +11,7 @@ import math
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from IstkharXMusic .utils.formatters import time_to_seconds
+from SONALI .utils.formatters import time_to_seconds
 
 
 def stream_markup_timerr(_, videoid, chat_id, played, dur):
