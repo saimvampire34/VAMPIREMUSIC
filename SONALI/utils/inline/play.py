@@ -39,7 +39,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
-    if 0 < umm <= 10:
+     if 0 < umm <= 10:
         bar = "▰▱▱▱▱▱▱▱▱▱"
     elif 10 < umm < 20:
         bar = "▰▰▱▱▱▱▱▱▱▱"
@@ -59,7 +59,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         bar = "▰▰▰▰▰▰▰▰▰▱"
     else:
         bar = "▰▰▰▰▰▰▰▰▰▰"
-
+        
     buttons = [
         [
             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
@@ -76,10 +76,10 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
       [
             InlineKeyboardButton(
-                text="✰ 𝖡ᴧ፝֠֩ʙꭎ ✰", url="https://t.me/+D_gPPokGlNVkNjU1",
+                text="✰ 𝖡ᴧ፝֠֩ʙꭎ ✰", url="https://t.me/ll_ISTKHAR_ll",
             ),
             InlineKeyboardButton(
-                text="✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰", url="https://t.me/ll_ISTKHAR_ll",
+                text="✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰", url="https://t.me/+D_gPPokGlNVkNjU1",
             )
         ],
          [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -99,10 +99,10 @@ def stream_markup(_, videoid, chat_id):
          ],
         [
             InlineKeyboardButton(
-                text="✰ 𝖡ᴧ፝֠֩ʙꭎ ✰", url="https://t.me/CRAZY_OP_01",
+                text="✰ 𝖡ᴧ፝֠֩ʙꭎ ✰", url="https://t.me/WORLD_ALPHA",
             ),
             InlineKeyboardButton(
-                text="✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰", url="https://t.me/ll_ISTKHAR_ll",
+                text="✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰", url="https://t.me/+Q25anL0Ckuk5NzM1",
             )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -117,8 +117,7 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
             InlineKeyboardButton(
                 text=_["P_B_1"],
                 callback_data=f"RAUSHANPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
-
-),
+            ),
             InlineKeyboardButton(
                 text=_["P_B_2"],
                 callback_data=f"RAUSHANPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
@@ -239,8 +238,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
         bar = "ﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـ"
     elif 11 <= anon < 12:
         bar = "ﮩ٨ـﮩ♡ﮩ٨ـﮩ٨ـﮩﮩ٨ـ"
-
-elif 12 <= anon < 13:
+    elif 12 <= anon < 13:
         bar = "ﮩ♡٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ"
     elif 13 < anon < 14:
         bar = "ﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩ♡ﮩ٨ـ"
@@ -372,8 +370,7 @@ elif 12 <= anon < 13:
         bar = "ﮩ♡٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ"
     elif 77 <= anon < 78:
         bar = "ﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩ♡ﮩ٨ـ"
-
-elif 78 <= anon < 79:
+    elif 78 <= anon < 79:
         bar = "ﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـ"
     elif 79 <= anon < 80:
         bar = "ﮩ٨ـﮩ♡ﮩ٨ـﮩ٨ـﮩﮩ٨ـ"
