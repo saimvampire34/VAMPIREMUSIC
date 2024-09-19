@@ -37,7 +37,7 @@ pause = {}
 playmode = {}
 playtype = {}
 skipmode = {}
-mute = {}
+
 
 async def get_assistant_number(chat_id: int) -> str:
     assistant = assistantdict.get(chat_id)
@@ -56,22 +56,6 @@ async def get_client(assistant: int):
     elif int(assistant) == 5:
         return userbot.five
 
-async def connect_to_chat(user_id: int, chat_id: int):
-    existing = await connectdb.find_one({'user_id': user_id, 'chat_id': chat_id})
-    if existing:
-        return True
-
-    result = await connectdb.update_one(
-        {'user_id': user_id},
-        {'$set': {'chat_id': chat_id}},
-        upsert=True
-    )
-    
-    return result.modified_count > 0 or result.upserted_id is not None
- 
-async def get_connected_chat(user_id: int):
-    user = await connectdb.find_one({'user_id': user_id}, {'_id': 0, 'chat_id': 1})
-    return user['chat_id'] if user and 'chat_id' in user else False
 
 async def set_assistant_new(chat_id, number):
     number = int(number)
@@ -83,7 +67,7 @@ async def set_assistant_new(chat_id, number):
 
 
 async def set_assistant(chat_id):
-    from ANNIEMUSIC.core.userbot import assistants
+    from SONALI.core.userbot import assistants
 
     ran_assistant = random.choice(assistants)
     assistantdict[chat_id] = ran_assistant
@@ -166,7 +150,6 @@ async def group_assistant(self, chat_id: int) -> int:
         return self.four
     elif int(assis) == 5:
         return self.five
-
 
 async def is_skipmode(chat_id: int) -> bool:
     mode = skipmode.get(chat_id)
@@ -328,25 +311,9 @@ async def music_on(chat_id: int):
 async def music_off(chat_id: int):
     pause[chat_id] = False
 
-# Muted
-async def is_muted(chat_id: int) -> bool:
-    mode = mute.get(chat_id)
-    if not mode:
-        return False
-    return mode
-
-
-async def mute_on(chat_id: int):
-    mute[chat_id] = True
-
-
-async def mute_off(chat_id: int):
-    mute[chat_id] = False
-
 
 async def get_active_chats() -> list:
     return active
-
 
 async def is_active_chat(chat_id: int) -> bool:
     if chat_id not in active:
@@ -518,12 +485,6 @@ async def add_served_chat(chat_id: int):
     if is_served:
         return
     return await chatsdb.insert_one({"chat_id": chat_id})
-
-# New function to remove served chat
-async def remove_served_chat(chat_id: int):
-    if await is_served_chat(chat_id):
-        await chatsdb.delete_one({"chat_id": chat_id})
-    
 
 async def blacklisted_chats() -> list:
     chats_list = []
