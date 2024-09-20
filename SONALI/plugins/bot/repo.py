@@ -7,7 +7,7 @@ import httpx
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 start_txt = """
-✰ 𝗪ᴇʟᴄᴏᴍᴇ ᴛᴏ 𝗧ᴇᴀᴍ 𝗣ᴜʀᴠɪ 𝗥ᴇᴘᴏs ✰
+✰ 𝗪ᴇʟᴄᴏᴍᴇ ᴛᴏ 𝗧ᴇᴀᴍ 𝗥ɪʏᴀ 𝗥ᴇᴘᴏs ✰
  
 ✰ 𝗥ᴇᴘᴏ ᴛᴏ 𝗡ʜɪ 𝗠ɪʟᴇɢᴀ 𝗬ʜᴀ
  
@@ -30,10 +30,10 @@ async def start(_, msg):
         ],
         [
           InlineKeyboardButton("𝗛ᴇʟᴘ", url="https://t.me/team_riya_support"),
-          InlineKeyboardButton("⍣ ፝֠֩ ̶ ̶ꭘⷪ ͓ ꯭፝֠֩͠ ̶꯭ ̶͓𝚰𝛅꯭𝗍ᴋ꯭ʜᴧ꯭ꝛ", url="https://t.me/Ksdofficial84"),
+          InlineKeyboardButton("꧁•⊹٭𝙺𝚂𝙳٭⊹•꧂", url="https://t.me/Ksdofficial84"),
           ],
                [
-                InlineKeyboardButton("𝗧ᴇᴀᴍ 𝗣ᴜʀᴠɪ 𝗕ᴏᴛs", url=f"https://t.me/KSD_BOT_NETWORK"),
+                InlineKeyboardButton("𝗧ᴇᴀᴍ 𝗥ɪʏᴀ 𝗕ᴏᴛs", url=f"https://t.me/KSD_BOT_NETWORK"),
 ],
 [
 InlineKeyboardButton("𝗠ᴀɪɴ 𝗕ᴏᴛ", url=f"https://t.me/RIYA_XMUSIC_ROBOT"),
@@ -46,4 +46,4 @@ InlineKeyboardButton("𝗠ᴀɪɴ 𝗕ᴏᴛ", url=f"https://t.me/RIYA_XMUSIC_RO
         photo="https://telegra.ph/file/9601c451ff3bac3c8e3b8.jpg",
         caption=start_txt,
         reply_markup=reply_markup
-    )
+    )	
