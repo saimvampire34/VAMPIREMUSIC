@@ -38,7 +38,7 @@
         "required": true
       },
       "STRING_SESSION": {
-        "description": "A Pyrogram v2 String Session from @KING_STRING_SESSION_BOT on Telegram.",
+        "description": "A Pyrogram v2 String Session from @StringFatherBot on Telegram.",
         "value": "",
         "required": true
       },
@@ -56,9 +56,9 @@
          "description": "your favourate image",
          "required": true,
          "value": ""
-        }   
+        },
       "LOGGER_ID": {
-        "description": "Your Log Group ID, add your bot or assistant and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
         "value": "",
         "required": true
       }
@@ -75,4 +75,4 @@
           }
       ],
       "stack": "container"
-  }
+}
