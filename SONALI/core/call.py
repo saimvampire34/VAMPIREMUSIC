@@ -33,9 +33,9 @@ from pytgcalls.types.stream import StreamAudioEnded
 
 import config
 from strings import get_string
-from RAUSHANMUSIC import LOGGER, YouTube, app
-from RAUSHANMUSIC.misc import db
-from RAUSHANMUSIC.utils.database import (
+from SONALI import LOGGER, YouTube, app
+from SONALI.misc import db
+from SONALI.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_assistant,
@@ -50,11 +50,11 @@ from RAUSHANMUSIC.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from RAUSHANMUSIC.utils.exceptions import AssistantErr
-from RAUSHANMUSIC.utils.formatters import check_duration, seconds_to_min, speed_converter
-from RAUSHANMUSIC.utils.inline.play import stream_markup, telegram_markup
-from RAUSHANMUSIC.utils.stream.autoclear import auto_clean
-from RAUSHANMUSIC.utils.thumbnails import gen_thumb
+from SONALI.utils.exceptions import AssistantErr
+from SONALI.utils.formatters import check_duration, seconds_to_min, speed_converter
+from SONALI.utils.inline.play import stream_markup, telegram_markup
+from SONALI.utils.stream.autoclear import auto_clean
+from SONALI.utils.thumbnails import gen_thumb
 
 active = []
 autoend = {}
